@@ -1,0 +1,20 @@
+﻿Zamodelowana scena:
+1. Kamera ma w każdym przypadku aspectRatio = 1 oraz kąt widzenia to 45st
+2. Algorytm wypełniania jest zoptymalizowany dla trójkątów, najpierw dodane są do AET pierwsze dwie krawędzie,
+	następnie w AddToAET zamieniana jest krawędź krótsza z tą z buckets[min], jeśli AET.ymax == xmin to koniec wypełninia,
+	ponieważ sytuacja ta może nastąpić tylko wówczas, gdy algorytm osiągnął ostatni wierzchołek wypełnianego trójkąta.
+3. Objekty na scenie są ustawione w konkretny sposób - brak możliwości skalowania obrazu
+4. Objekt Light oznacza reflektor zamonotwany na łódce (Boat). 
+Zmienne z przedrostkiem Reflector odnoszą się do żródła reflektora i z ich pomocą wyznaczane są kolory pikseli.
+5. Dla każdej Kamery bliższa ściana, od której widać obraz jest ustawiona ręcznie, w klasie View.
+6. Gdy włączona mgła, gradient mgły przyjmuje różne wartośći, w zależności od kamery obserwującej scenę.
+7. Funkcja wyliczająca mgłę jest tak dobrana, aby było widać, że rzeczywiście mgła występuje.
+Trzecia kamera:
+8. Trzecia kamera ustawiona jest na prawie burcie łódki i obserwuje żółtą bojkę (kulę).
+Reflektor:
+9. "Straight" - reflektor świeci pod kątem prostym do burty łódki.
+   "Directed on the Yellow Buoy" - reflektor świeci zawsze w kierunku żółtej boi.
+Cieniowanie:
+10. W projekcie użyte jest tylko cieniowanie Gouraud'a.
+Oświetlenie:
+11. Poza reflektorem na scenie występuje jeszcze jedno źródło światła, punktowe, zaczepione nad całą sceną.
