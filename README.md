@@ -14,9 +14,3 @@ There are three different views:
 In the first view, only the boat is moving.
 In the second view, the camera follows the boat.
 In the third view, the camera is situated on the right side of the boat.
-
-# Example views
-1. From the second view:
-![rys2](https://user-images.githubusercontent.com/128033227/230322146-07b2c0a7-8618-43b1-bd5f-bd5c39d44047.png)
-2. From the third view:
-![rys1](https://user-images.githubusercontent.com/128033227/230322185-ba9ff418-dfe8-4a7a-871b-456149ac8b38.png)
